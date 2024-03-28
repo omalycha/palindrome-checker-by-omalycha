@@ -7,7 +7,7 @@ const paragraphTwo = document.querySelector('.paragraph2');
 
 function palindrome(str) {
   let onlyAlphanumeric = str.toLowerCase().split('').reverse().join('');
-  return onlyAlphanumeric === str;
+  return onlyAlphanumeric === str.toLowerCase();
 }
 
 buttonSection.addEventListener('click', function () {
